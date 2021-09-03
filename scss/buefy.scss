@@ -1,0 +1,14 @@
+@import "../node_modules/bulma/sass/utilities/functions";
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// buefy: modifies scss/utils/_all
+$speed-slow: 150ms !default;
+$speed-slower: 250ms !default;
+
+@import "../node_modules/buefy/src/scss/utils/_functions.scss";
+@import "../node_modules/buefy/src/scss/utils/_helpers.scss";
+@import "../node_modules/buefy/src/scss/utils/_animations.scss";
+
+@import "../node_modules/bulma/bulma";
+@import "../node_modules/buefy/src/scss/utils/variables-ext";
+@import "../node_modules/buefy/src/scss/buefy";

@@ -1,0 +1,35 @@
+{
+  "name": "buefy",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build:scss --watch",
+    "build": "npm run build:scss && npm run build:cleancss",
+    "build:autoprefix": "postcss --use autoprefixer --map false --output css/buefy.css css/buefy.css",
+    "build:cleancss": "cleancss -o css/buefy.min.css css/buefy.css",
+    "build:scss": "sass --source-map scss/buefy.scss css/buefy.css",
+    "clean": "rimraf css"
+  },
+  "main": "scss/buefy.scss",
+  "unpkg": "css/buefy.css",
+  "style": "buefy/css/buefy.min.css",
+  "peerDependencies": {
+    "buefy": "^0.9.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "buefy": "^0.9.10",
+    "clean-css-cli": "^5.3.3",
+    "node-sass": "^6.0.1",
+    "postcss-cli": "^8.3.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.39.0"
+  },
+  "files": [
+    "css",
+    "sass",
+    "bulma.sass",
+    "LICENSE",
+    "README.md"
+  ]
+}
